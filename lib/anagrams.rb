@@ -30,7 +30,7 @@ class Anagram
         return "is anagram"
       else
         if sort.join.match?("#{sort2}")
-          return "is not a anagram"
+          return "is not an anagram"
         else
           return "is antigram"
         end
