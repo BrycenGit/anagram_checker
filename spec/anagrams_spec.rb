@@ -17,4 +17,9 @@ describe ('Anagram#anagrams') do
     anagram.remove_special
     expect(anagram.phrase2).to(eq('goodfriends'))
   end
+
+  it ('will make all characters lowercase in string') do
+    anagram = Anagram.new('HELLO', 'Hello')
+    anagram.to_downcase
+    expect(anagram.phrase).to(eq('Hello'))
 end
