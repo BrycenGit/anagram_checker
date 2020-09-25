@@ -7,7 +7,7 @@ class Anagram
   end
 
   def has_vowel
-    @phrase.match?(/[aeiou]/i) && @phrase2.match?(/[aeiou]/i)
+    @phrase.match?(/[aeiouy]/i) && @phrase2.match?(/[aeiouy]/i)
   end
 
   def remove_special
@@ -31,14 +31,6 @@ class Anagram
     sort.join.scan(/#{sort2}/i)
   end
 
-  # def to_hash
-  #   dict = how_many_times.group_by { |str| str }
-  #   dict.each_key do |key|
-  #     puts dict.fetch(key)
-  #   end
-  #   return dict
-  # end
-
   def count_occurence
     final_array =[]
     array = how_many_times
@@ -54,7 +46,6 @@ class Anagram
     end
   end
 
-
   def anagram_check
     if has_vowel()
       remove_downcase()
@@ -64,10 +55,14 @@ class Anagram
         return "These 2 phrases are anagrams"
       else
         if sort.join.match?("#{sort2}")
-          puts "These 2 phrases are not an anagrams"
+          puts "These 2 phrases are not anagrams"
+          sleep 0.5
           puts "But you were so close"
+          sleep 1.5
           return "#{count_occurence}"
         else
+          puts "Wow"
+          sleep 1.5
           return "These phrases are antigrams"
         end
       end
