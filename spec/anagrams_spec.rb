@@ -15,6 +15,6 @@ describe ('Anagram#anagrams') do
   it ('will remove special characters and spaces from both phrases') do
     anagram = Anagram.new('hello my friend!', 'good friends?')
     anagram.remove_special
-    expect(anagram.phrase2).to(eq(''))
+    expect(anagram.phrase2).to(eq('goodfriends'))
   end
 end
