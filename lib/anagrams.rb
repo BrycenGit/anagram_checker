@@ -24,10 +24,16 @@ class Anagram
     if has_vowel()
       remove_special()
       to_downcase()
-      if @phrase.chars.sort.join == @phrase2.chars.sort.join
+      sort = @phrase.chars.sort
+      sort2 = @phrase2.chars.sort
+      if sort.join == sort2.join
         return "is anagram"
       else
-        return "is not anagram"
+        if sort.join.match?("#{sort2}")
+          return "is not a anagram"
+        else
+          return "is antigram"
+        end
       end
     else
       return "these are not words"
