@@ -28,7 +28,7 @@ class Anagram
   def how_many_times
     sort = @phrase.chars.sort
     sort2 = @phrase2.chars.sort
-    sort.join.scan("#{sort2}")
+    return sort.join.scan("#{sort2.join}")
   end
 
 

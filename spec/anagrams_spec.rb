@@ -40,8 +40,8 @@ describe ('Anagram#anagrams') do
   end
 
   it ('will re turn how many letters match in the phrases') do
-    anagram = Anagram.new('hello', 'hello')
-    expect(anagram.how_many_times).to(eq('Please use real words'))
+    anagram = Anagram.new('hello', 'helloop')
+    expect(anagram.how_many_times).to(eq(['hello']))
   end
 
 end
