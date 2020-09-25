@@ -26,16 +26,16 @@ describe ('Anagram#anagrams') do
 
   it ('will check if the two phrases are anagrams') do
     anagram = Anagram.new('Hello', 'good bye')
-    expect(anagram.anagram_check).to(eq('is not an anagram'))
+    expect(anagram.anagram_check).to(eq('These 2 phrases are not an anagrams'))
   end
 
   it ('will check if the two phrases are antigrams') do
     anagram = Anagram.new('Halo', 'bye')
-    expect(anagram.anagram_check).to(eq('is antigram'))
+    expect(anagram.anagram_check).to(eq('These phrases are antigrams'))
   end
 
   it ('will check the return with no vowels in each word') do
     anagram = Anagram.new('lll', 'jjj')
-    expect(anagram.anagram_check).to(eq('these are not words'))
+    expect(anagram.anagram_check).to(eq('Please use real words'))
   end
 end

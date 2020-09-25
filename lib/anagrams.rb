@@ -27,16 +27,16 @@ class Anagram
       sort = @phrase.chars.sort
       sort2 = @phrase2.chars.sort
       if sort.join == sort2.join
-        return "is anagram"
+        return "These 2 phrases are anagrams"
       else
         if sort.join.match?("#{sort2}")
-          return "is not an anagram"
+          return "These 2 phrases are not an anagrams"
         else
-          return "is antigram"
+          return "These phrases are antigrams"
         end
       end
     else
-      return "these are not words"
+      return "Please use real words"
     end
   end
 end
