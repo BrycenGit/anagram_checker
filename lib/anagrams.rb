@@ -25,6 +25,13 @@ class Anagram
     to_downcase()
   end
 
+  def how_many_times
+    sort = @phrase.chars.sort
+    sort2 = @phrase2.chars.sort
+    sort.join.scan("#{sort2}")
+  end
+
+
   def anagram_check
     if has_vowel()
       remove_downcase()
