@@ -20,10 +20,14 @@ class Anagram
     @phrase2.downcase!
   end
 
+  def remove_downcase
+    remove_special()
+    to_downcase()
+  end
+
   def anagram_check
     if has_vowel()
-      remove_special()
-      to_downcase()
+      remove_downcase()
       sort = @phrase.chars.sort
       sort2 = @phrase2.chars.sort
       if sort.join == sort2.join
