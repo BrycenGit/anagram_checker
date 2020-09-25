@@ -11,5 +11,4 @@ puts '----------------------------'
 anagram = Anagram.new(input, input2)
 puts anagram.anagram_check
 
-puts anagram.hello
 

@@ -43,11 +43,16 @@ class Anagram
     final_array =[]
     array = how_many_times
     array.each do |element|
-      final_array << "#{element} has #{array.count(element)} matches"
+      final_array << "'#{element}' has #{array.count(element)} match#{return_s(array.count(element))}"
     end
     return final_array.uniq.join(', ')
   end
 
+  def return_s(number)
+    if number > 1
+      return 'es'
+    end
+  end
 
 
   def anagram_check
@@ -59,6 +64,7 @@ class Anagram
         return "These 2 phrases are anagrams"
       else
         if sort.join.match?("#{sort2}")
+          puts "#{count_occurence}"
           return "These 2 phrases are not an anagrams"
         else
           return "These phrases are antigrams"

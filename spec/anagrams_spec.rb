@@ -46,6 +46,6 @@ describe ('Anagram#anagrams') do
 
   it ('will return a string that states occurences') do
     anagram = Anagram.new('helloo', 'helloop')
-    expect(anagram.count_occurence).to(eq("e has 1 matches, h has 1 matches, l has 2 matches, o has 2 matches"))
+    expect(anagram.count_occurence).to(eq("'e' has 1 match, 'h' has 1 match, 'l' has 2 matches, 'o' has 2 matches"))
   end
 end
