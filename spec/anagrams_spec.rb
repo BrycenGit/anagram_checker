@@ -26,7 +26,7 @@ describe ('Anagram#anagrams') do
 
   it ('will check if the two phrases are anagrams') do
     anagram = Anagram.new('Hello', 'good bye')
-    expect(anagram.anagram_check).to(eq('hello'))
+    expect(anagram.anagram_check).to(eq('is not anagram'))
   end
 
 end
