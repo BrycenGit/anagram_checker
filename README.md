@@ -23,12 +23,12 @@ _this program will take in two words and let the user know whether it is an anam
 
 ## Setup & Installation
 
-- Clone project to desktop <code>\$git clone https://github.com/BrycenGit/anagram_checker.git</code>
+- Clone project to desktop <code>\$ git clone https://github.com/BrycenGit/anagram_checker.git</code>
 - Move to project directory <code>\$ cd anagram_checker</code>
-- Open project in vscode <code>\$code .</code>
-- In terminal run <code>\$bundle install</code>
-- In terminal run <code>\$rspec</code>
-- In terminal run <code>\$ruby app.rb</code>
+- Open project in vscode <code>\$ code .</code>
+- In terminal run <code>\$ bundle install</code>
+- In terminal run <code>\$ rspec</code>
+- In terminal run <code>\$ ruby app.rb</code>
 
 ## Known Bugs
 
