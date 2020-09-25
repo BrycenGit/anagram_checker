@@ -14,4 +14,9 @@ class Anagram
     @phrase.gsub!(/[^A-Za-z]/, '')
     @phrase2.gsub!(/[^A-Za-z]/, '')
   end
+
+  def to_downcase
+    @phrase.downcase!
+    @phrase2.downcase!
+  end
 end
