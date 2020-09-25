@@ -31,8 +31,21 @@ class Anagram
     sort.join.scan(/#{sort2}/i)
   end
 
-  def to_hash
-    how_many_times.to_h
+  # def to_hash
+  #   dict = how_many_times.group_by { |str| str }
+  #   dict.each_key do |key|
+  #     puts dict.fetch(key)
+  #   end
+  #   return dict
+  # end
+
+  def count_occurence
+    final_array =[]
+    array = how_many_times
+    array.each do |element|
+      final_array << "#{element} has #{array.count(element)} matches"
+    end
+    return final_array.uniq.join(', ')
   end
 
 
