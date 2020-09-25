@@ -4,7 +4,7 @@ require ('anagrams')
 describe ('Anagram#anagrams') do
   it ('will check both inputs to see if they contain vowels') do
     anagram = Anagram.new('hello', 'good')
-    expect(anagram.has_vowel).to(eq(false))
+    expect(anagram.has_vowel).to(eq(true))
   end
 
   # it ('will split phrase into an array words and will remove numbers and characters') do
