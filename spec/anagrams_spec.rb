@@ -28,9 +28,14 @@ describe ('Anagram#anagrams') do
     anagram = Anagram.new('Hello', 'good bye')
     expect(anagram.anagram_check).to(eq('is not an anagram'))
   end
+
   it ('will check if the two phrases are antigrams') do
     anagram = Anagram.new('Halo', 'bye')
     expect(anagram.anagram_check).to(eq('is antigram'))
   end
 
+  it ('will check the return with no vowels in each word') do
+    anagram = Anagram.new('lll', 'jjj')
+    expect(anagram.anagram_check).to(eq('no'))
+  end
 end
