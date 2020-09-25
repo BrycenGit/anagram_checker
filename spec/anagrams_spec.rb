@@ -9,5 +9,6 @@ describe ('Anagram#anagrams') do
 
   it ('will split phrase into an array words') do
     anagram = Anagram.new('hello my friend!')
-    expect(anagram.split_words).to(eq([hello]))
+    expect(anagram.split_phrase).to(eq(["hello", "my", "friend"]))
+  end
 end
