@@ -39,9 +39,9 @@ describe ('Anagram#anagrams') do
     expect(anagram.anagram_check).to(eq('Please use real words'))
   end
 
-  it ('will re turn how many letters match in the phrases') do
-    anagram = Anagram.new('hello', 'helloop')
-    expect(anagram.how_many_times).to(eq(['hello']))
+  it ('will re turn an array of letters that each phrase has in common') do
+    anagram = Anagram.new('helloo', 'helloop')
+    expect(anagram.how_many_times).to(eq(["e", "h", "l", "l", "o", "o"]))
   end
 
 end
