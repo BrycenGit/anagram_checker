@@ -23,4 +23,10 @@ describe ('Anagram#anagrams') do
     anagram.to_downcase
     expect(anagram.phrase).to(eq('hello'))
   end
+
+  it ('will check if the two phrases are anagrams') do
+    anagram = Anagram.new('Hello', 'good bye')
+    expect(anagram.anagram_check).to(eq('hello'))
+  end
+
 end

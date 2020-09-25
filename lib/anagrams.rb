@@ -19,4 +19,18 @@ class Anagram
     @phrase.downcase!
     @phrase2.downcase!
   end
+
+  def anagram_check
+    if has_vowel()
+      remove_special()
+      to_downcase()
+      if @phrase.chars.sort.join == @phrase2.chars.sort.join
+        return "is anagram"
+      else
+        return "is not anagram"
+      end
+    else
+      return "these are not words"
+    end
+  end
 end
