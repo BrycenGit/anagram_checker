@@ -44,4 +44,8 @@ describe ('Anagram#anagrams') do
     expect(anagram.how_many_times).to(eq(["e", "h", "l", "l", "o", "o"]))
   end
 
+  it ('will re turn a hash') do
+    anagram = Anagram.new('helloo', 'helloop')
+    expect(anagram.to_hash).to(eq(["e", "h", "l", "l", "o", "o"]))
+  end
 end

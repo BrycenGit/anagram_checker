@@ -31,6 +31,11 @@ class Anagram
     sort.join.scan(/#{sort2}/i)
   end
 
+  def to_hash
+    how_many_times.to_h
+  end
+
+
 
   def anagram_check
     if has_vowel()
