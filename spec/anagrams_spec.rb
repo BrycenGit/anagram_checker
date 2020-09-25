@@ -36,6 +36,6 @@ describe ('Anagram#anagrams') do
 
   it ('will check the return with no vowels in each word') do
     anagram = Anagram.new('lll', 'jjj')
-    expect(anagram.anagram_check).to(eq('no'))
+    expect(anagram.anagram_check).to(eq('these are not words'))
   end
 end
