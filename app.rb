@@ -14,4 +14,4 @@ anagram = Anagram.new(input, input2)
 puts '----------------------------'
 puts anagram.anagram_check
 puts '----------------------------'
-.
+
