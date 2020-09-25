@@ -1,8 +1,11 @@
-class anagram
+class Anagram
   attr_accessor (:phrase)
 
   def initialize(phrase)
     @phrase = phrase
   end
 
-  def is_vowel
+  def has_vowel
+    @phrase.match?(/[aeiou]/i)
+  end
+end
