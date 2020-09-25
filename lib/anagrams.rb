@@ -1,5 +1,5 @@
 class Anagram
-  attr_accessor (:phrase)
+  attr_accessor :phrase, :phrase2
 
   def initialize(phrase, phrase2)
     @phrase = phrase
@@ -10,7 +10,8 @@ class Anagram
     @phrase.match?(/[aeiou]/i) && @phrase2.match?(/[aeiou]/i)
   end
 
-  def split_phrase
-    @phrase.gsub!(/[^A-Za-z\s*]/, '').split(' ')
+  def remove_special
+    @phrase.gsub!(/[^A-Za-z]/, '')
+    @phrase2.gsub!(/[^A-Za-z]/, '')
   end
 end

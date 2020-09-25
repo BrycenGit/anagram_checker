@@ -7,8 +7,14 @@ describe ('Anagram#anagrams') do
     expect(anagram.has_vowel).to(eq(true))
   end
 
-  # it ('will split phrase into an array words and will remove numbers and characters') do
-  #   anagram = Anagram.new('hello my friend!')
-  #   expect(anagram.split_phrase).to(eq(["hello", "my", "friend"]))
-  # end
+  it ('will remove special characters and spaces from both phrases') do
+    anagram = Anagram.new('hello my friend!', 'good')
+    anagram.remove_special
+    expect(anagram.phrase).to(eq('hellomyfriend'))
+  end
+  it ('will remove special characters and spaces from both phrases') do
+    anagram = Anagram.new('hello my friend!', 'good friends?')
+    anagram.remove_special
+    expect(anagram.phrase2).to(eq(''))
+  end
 end
