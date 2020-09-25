@@ -64,8 +64,9 @@ class Anagram
         return "These 2 phrases are anagrams"
       else
         if sort.join.match?("#{sort2}")
-          puts "#{count_occurence}"
-          return "These 2 phrases are not an anagrams"
+          puts "These 2 phrases are not an anagrams"
+          puts "But you were so close"
+          return "#{count_occurence}"
         else
           return "These phrases are antigrams"
         end
