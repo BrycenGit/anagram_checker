@@ -28,7 +28,7 @@ _this program will take in two words and let the user know whether it is an anam
 - Open project in vscode <code>\$ code .</code>
 - In terminal run <code>\$ bundle install</code>
 - In terminal run <code>\$ rspec</code>
-- In terminal run <code>\$ ruby app.rb</code>
+- In vscode terminal run <code>\$ ruby app.rb</code>
 
 ## Known Bugs
 
